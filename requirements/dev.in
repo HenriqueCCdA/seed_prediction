@@ -1,0 +1,8 @@
+-c ./api.txt
+
+black
+ruff
+pytest
+pytest-cov
+ipython
+ipdb
