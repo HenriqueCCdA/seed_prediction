@@ -4,7 +4,7 @@ from typing import Annotated
 from fastapi import Query, HTTPException, status, APIRouter
 import torch
 
-from sementes_ai.model.network_architecture import model
+from seed_prediction.model.network_architecture import model
 
 
 router = APIRouter()

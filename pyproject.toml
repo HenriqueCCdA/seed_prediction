@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="seed_prediction"
+version = "0.1.0"
+authors = [
+    {name = "Henrique C. C de Andrade", email = "henrique.ccda@gmail.com"},
+]
+requires-python = ">=3.10"
+dynamic = ["dependencies", "optional-dependencies"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file="requirements/api.txt"}
+optional-dependencies.all = {file="requirements/all.txt"}
+optional-dependencies.dev = {file="requirements/dev.txt"}
+optional-dependencies.train = {file="requirements/train.txt"}
+
+[tool.setuptools]
+packages = ["seed_prediction"]
+
+[project.scripts]
+seed_prediction = "seed_prediction.cli:app_cli"

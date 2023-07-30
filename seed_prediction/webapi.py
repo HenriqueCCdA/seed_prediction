@@ -1,7 +1,7 @@
 
 from fastapi import FastAPI
 
-from sementes_ai.routes import router
+from seed_prediction.routes import router
 
 app = FastAPI()
 

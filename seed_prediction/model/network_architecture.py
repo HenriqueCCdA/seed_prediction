@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from sementes_ai.config import settings
+from seed_prediction.config import settings
 
 class Modelo(nn.Module):
 

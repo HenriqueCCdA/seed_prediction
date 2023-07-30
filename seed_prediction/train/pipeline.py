@@ -3,8 +3,8 @@ import torch
 import torch.nn as nn
 from sklearn.model_selection import train_test_split
 
-from sementes_ai.model.network_architecture import Modelo
-from sementes_ai.config import settings
+from seed_prediction.model.network_architecture import Modelo
+from seed_prediction.config import settings
 
 
 def train():

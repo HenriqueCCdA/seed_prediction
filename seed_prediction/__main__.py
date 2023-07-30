@@ -1,4 +1,4 @@
-from sementes_ai.cli import app_cli
+from seed_prediction.cli import app_cli
 
 
 if __name__ == "__main__":

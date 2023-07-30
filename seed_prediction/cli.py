@@ -2,8 +2,8 @@
 from rich.console import Console
 from typer import Typer
 
-from sementes_ai.train.pipeline import train as train_
-from sementes_ai.config import settings
+from seed_prediction.train.pipeline import train as train_
+from seed_prediction.config import settings
 
 console = Console()
 
